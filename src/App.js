@@ -38,6 +38,7 @@ class ImageLoader extends Component {
 class App extends Component {
 
   render() {
+    // URLs used for the placeholder and fullsized image
     var placeholderUrl = "https://forge-homework.s3.amazonaws.com/thumb.jpg";
     var imageUrl = "https://forge-homework.s3.amazonaws.com/fullsize.jpg";
 
