@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './App.css';
 import ImageLoader from './ImageLoader';
 
-class App extends Component {
+class App extends React.Component {
 
   render() {
     // URLs used for the placeholder and full-sized image
