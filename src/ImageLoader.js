@@ -33,7 +33,7 @@ class ImageLoader extends React.Component {
   getImage() {
     return (
       <img
-        className={`image ${ this.state.loaded ? "" : "loading" }`}
+        className={ this.state.loaded ? "" : "loading" }
         src={this.props.image}
         onLoad={ this.onImageLoaded() }
       />
