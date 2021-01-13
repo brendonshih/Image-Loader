@@ -16,8 +16,8 @@ class App extends React.Component {
 
         {/* loading the ImageLoader component here, passing in placeholder and image URLs as props */}
         <ImageLoader
-          placeholder={placeholderUrl}
-          image={imageUrl}
+          placeholder={ placeholderUrl }
+          image={ imageUrl }
         ></ImageLoader>
       </div>
     );

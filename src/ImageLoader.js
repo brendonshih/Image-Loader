@@ -9,7 +9,7 @@ class ImageLoader extends React.Component {
       loaded: false
     };
   }
-  
+
   // Once image is fully loaded, it runs setState to change state.loaded to true,
   // which will remove the "loading" class, causing the 'display: none;' to no longer apply and making the image appear
   onImageLoaded() {
@@ -23,7 +23,7 @@ class ImageLoader extends React.Component {
   // Returns a placeholder image if state.loaded == false
   // Once loaded == true, the placeholder image return null and the image will disappear
   getPlaceholderImage() {
-    return this.state.loaded ? null : <img src={this.props.placeholder} />;
+    return this.state.loaded ? null : <img src={ this.props.placeholder } />;
   }
 
   // Returns the image element. While state.loaded is false, the element is given the className 'loading'
@@ -33,9 +33,9 @@ class ImageLoader extends React.Component {
   getImage() {
     return (
       <img
-        className={`image ${this.state.loaded ? "" : "loading"}`}
+        className={`image ${ this.state.loaded ? "" : "loading" }`}
         src={this.props.image}
-        onLoad={this.onImageLoaded()}
+        onLoad={ this.onImageLoaded() }
       />
     );
   }
@@ -44,9 +44,9 @@ class ImageLoader extends React.Component {
   render() {
     return (
       <div className="image-container">
-        {this.getPlaceholderImage()}
+        { this.getPlaceholderImage() }
 
-        {this.getImage()}
+        { this.getImage() }
       </div>
     );
   }
